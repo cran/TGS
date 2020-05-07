@@ -4,12 +4,12 @@
 #'
 #' @return whether the given unrolled DBN follows 1st Markov order or not
 #'
-#' @examples
+# #' @examples
 #' checkUnrolledDbn(matrix(c(0,0,0,0),nrow=2,ncol=2))
 #'
-#' @export
-checkUnrolledDbn <- function(unrolled.DBN.adj.matrix)
-{
+#' @keywords internal
+#' @noRd
+checkUnrolledDbn <- function(unrolled.DBN.adj.matrix) {
   if(!base::is.matrix(unrolled.DBN.adj.matrix))
   {
     base::stop("Error in checkUnrolledDbn. unrolled.DBN.adj.matrix is not a matrix")
